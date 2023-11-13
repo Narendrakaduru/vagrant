@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "master" do |master|
     master.vm.box = "bento/ubuntu-22.04"
     master.vm.network "private_network", type: "static", ip: "192.168.10.120"
-    master.vm.hostname = "vagrant-master"
+    master.vm.hostname = "master"
     master.vm.provider "virtualbox" do |vb|
       vb.name = "Vagrant-Master"
       vb.memory = 2048
